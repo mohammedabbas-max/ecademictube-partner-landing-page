@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecademictube Partner Program — Global Student Ambassadors</title>
+  <meta name="description" content="Join Ecademictube's global partner program. Refer students in the USA, UK, UAE, Oman, and Kuwait and earn commissions. Simple sign-up, clear rewards, fast payouts."/>
+  <style>
+    :root{
+      --bg:#ffffff;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--brand:#2456ff;--brand-2:#5f86ff;--accent:#ff5f87;--accent-2:#00c2a8;--accent-3:#ffa928;--ok:#16a34a;--warn:#d97706;--shadow:0 10px 25px rgba(2,6,23,.06);
+      --radius:14px
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;color:var(--ink);background:var(--bg)}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;border:1px solid transparent;background:var(--brand);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;transition:.2s transform}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.secondary{background:#fff;border-color:var(--line);color:var(--ink)}
+    .btn.ghost{background:#ffffff;border:1px solid var(--line);color:var(--ink)}
+    .btn:focus{outline:3px solid rgba(36,86,255,.25)}
+
+    /* Header */
+    header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--line);z-index:40}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--accent))}
+    .nav-actions{display:flex;gap:8px;align-items:center}
+
+    /* Hero */
+    .hero{padding:56px 0 28px;background:linear-gradient(180deg,#f6f9ff,#ffffff)}
+    .hero h1{font-size:34px;line-height:1.2;margin:6px 0 10px}
+    .hero p{color:var(--muted);max-width:780px}
+    .chip{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:6px 12px;border-radius:999px;color:#0b2447;background:#fff}
+    .countries{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .swatch{display:inline-block;width:10px;height:10px;border-radius:999px;margin-right:6px}
+
+    /* Accent band */
+    .band{background:linear-gradient(90deg,var(--brand),var(--accent),var(--accent-2),var(--accent-3));height:4px}
+
+    /* Sections */
+    section{padding:36px 0}
+    .title{font-size:24px;margin:0 0 8px}
+    .lead{color:var(--muted);margin:0 0 14px}
+
+    /* Grids */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow);padding:16px}
+    .kitem{display:flex;gap:10px;align-items:flex-start}
+    .kitem b{font-size:16px}
+
+    /* Steps */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .step{border:1px solid var(--line);border-radius:var(--radius);padding:14px;background:#fff}
+    .num{font-weight:800;color:var(--brand)}
+
+    /* Calculator */
+    .calc input,.calc select{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line)}
+    .calc small{color:var(--muted)}
+    .result{font-size:22px;font-weight:800;margin-top:8px}
+
+    /* Testimonials */
+    blockquote{margin:0;padding:0}
+    .q{font-size:14px}
+    .by{color:var(--muted);font-size:13px;margin-top:6px}
+
+    /* Form */
+    form{display:grid;gap:10px}
+    label{font-size:13px;color:#334155}
+    input,select,textarea{padding:12px;border-radius:10px;border:1px solid var(--line);font:inherit}
+    input:focus,select:focus,textarea:focus{outline:3px solid rgba(36,86,255,.15)}
+    textarea{min-height:110px}
+    .inline{display:flex;gap:8px;align-items:center}
+    .twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .threecol{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+    .row{display:flex;gap:10px;align-items:center}
+    .ccode{width:120px}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#64748b}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .grid-3{grid-template-columns:1fr 1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .grid-2{grid-template-columns:1fr}
+      .threecol{grid-template-columns:1fr}
+      .twocol{grid-template-columns:1fr}
+    }
+    @media (max-width: 520px){
+      .grid-3{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+      .hero h1{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><strong>Ecademictube Partners</strong></div>
+      <div class="nav-actions">
+        <a class="btn ghost" href="#signin">Sign In</a>
+        <a class="btn secondary" href="#apply">Apply Now</a>
+      </div>
+    </div>
+  </header>
+  <div class="band" aria-hidden="true"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="chip"><span class="swatch" style="background:var(--accent)"></span>Earn by helping students succeed</span>
+      <h1>Join the Ecademictube Partner Program</h1>
+      <p>Refer students who need expert academic support and earn commissions on every paid order. Designed for a global audience across the <strong>USA, UK, UAE, Oman, and Kuwait</strong>.</p>
+      <div class="countries">
+        <span class="chip"><span class="swatch" style="background:var(--brand)"></span>USA</span>
+        <span class="chip"><span class="swatch" style="background:var(--accent-2)"></span>UK</span>
+        <span class="chip"><span class="swatch" style="background:var(--accent)"></span>UAE</span>
+        <span class="chip"><span class="swatch" style="background:var(--accent-3)"></span>Oman</span>
+        <span class="chip"><span class="swatch" style="background:#7c3aed"></span>Kuwait</span>
+      </div>
+      <p style="margin-top:16px"><a class="btn" href="#apply">Apply Now</a></p>
+    </div>
+  </section>
+
+  <!-- Why Join -->
+  <section>
+    <div class="container">
+      <h2 class="title">Why Join?</h2>
+      <p class="lead">Simple, transparent, and built for real student needs.</p>
+      <div class="grid-3">
+        <div class="card kitem"><div>💵</div><div><b>Earn 20–30% commission</b><br/><small>On every paid task or subscription from your referrals.</small></div></div>
+        <div class="card kitem"><div>🌍</div><div><b>Global-ready</b><br/><small>Payouts in USD • GBP • AED • OMR • KWD via PayPal, Wise, or bank transfer.</small></div></div>
+        <div class="card kitem"><div>📜</div><div><b>Certs & LOR</b><br/><small>Certificates, recommendation letters, and growth opportunities for top partners.</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section>
+    <div class="container">
+      <h2 class="title">How It Works</h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><b>Apply</b><br/><small>Share your details and target region.</small></div>
+        <div class="step"><div class="num">2</div><b>Get your link</b><br/><small>Receive a unique referral link or code.</small></div>
+        <div class="step"><div class="num">3</div><b>Share</b><br/><small>Promote to students via groups & socials.</small></div>
+        <div class="step"><div class="num">4</div><b>Earn</b><br/><small>Get paid for every verified order.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Earnings Example / Calculator -->
+  <section>
+    <div class="container grid-2">
+      <div class="card calc">
+        <h2 class="title">Earnings Estimator</h2>
+        <p class="lead">Quickly see what you could make each month.</p>
+        <label>Average order value
+          <input id="avg" type="number" min="10" value="120" />
+        </label>
+        <label>Commission rate (%)
+          <input id="rate" type="number" min="10" max="50" value="25" />
+        </label>
+        <label>Referrals per month
+          <input id="refs" type="number" min="1" value="10" />
+        </label>
+        <div class="result" id="out">$300 / month</div>
+        <small>Illustrative only. Actual payouts depend on approved orders and region.</small>
+      </div>
+      <div class="card">
+        <h2 class="title">What Partners Say</h2>
+        <blockquote>
+          <p class="q">“I earned my first $250 in the first month and the process was super simple.”</p>
+          <div class="by">— Sara, UK</div>
+        </blockquote>
+        <hr style="border:none;border-top:1px solid var(--line);margin:12px 0">
+        <blockquote>
+          <p class="q">“Clear tracking and timely payouts. Great for students in the UAE.”</p>
+          <div class="by">— Ali, UAE</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply Form -->
+  <section id="apply" style="background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container grid-2">
+      <div>
+        <h2 class="title">Apply to Join</h2>
+        <p class="lead">Short form. Fast review. Start earning soon.</p>
+        <ul>
+          <li>Commission: 20–30% per approved order</li>
+          <li>Regions: USA • UK • UAE • Oman • Kuwait</li>
+          <li>Payouts: PayPal, Wise, or bank transfer</li>
+        </ul>
+      </div>
+      <div class="card">
+        <form id="form" novalidate>
+          <div class="twocol">
+            <div>
+              <label for="first">First name*</label>
+              <input id="first" name="first_name" required placeholder="Ava" />
+            </div>
+            <div>
+              <label for="last">Last name*</label>
+              <input id="last" name="last_name" required placeholder="Johnson" />
+            </div>
+          </div>
+          <div>
+            <label for="college">College / University Name*</label>
+            <input id="college" name="college" required placeholder="University of California, Berkeley" />
+          </div>
+          <div class="row">
+            <div class="ccode">
+              <label for="code">Code</label>
+              <select id="code" name="country_code">
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+971">🇦🇪 +971</option>
+                <option value="+968">🇴🇲 +968</option>
+                <option value="+965">🇰🇼 +965</option>
+                <option value="+91">🇮🇳 +91</option>
+              </select>
+            </div>
+            <div style="flex:1">
+              <label for="whatsapp">WhatsApp number*</label>
+              <input id="whatsapp" name="whatsapp" required placeholder="555 0133" />
+            </div>
+          </div>
+          <div>
+            <label for="address">Address (Street)*</label>
+            <input id="address" name="address" required placeholder="123 Main St, Apt 4B" />
+          </div>
+          <div class="threecol">
+            <div>
+              <label for="city">City*</label>
+              <input id="city" name="city" required placeholder="Dubai" />
+            </div>
+            <div>
+              <label for="state">State / Province*</label>
+              <input id="state" name="state" required placeholder="California" />
+            </div>
+            <div>
+              <label for="country">Country*</label>
+              <select id="country" name="country" required>
+                <option value="">Select</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>UAE</option>
+                <option>Oman</option>
+                <option>Kuwait</option>
+                <option>India</option>
+              </select>
+            </div>
+          </div>
+          <div class="twocol">
+            <div>
+              <label for="instagram">Instagram profile link</label>
+              <input id="instagram" name="instagram" placeholder="https://instagram.com/yourhandle" />
+            </div>
+            <div>
+              <label for="email">Email id*</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="twocol">
+            <div>
+              <label for="password">Password*</label>
+              <input id="password" name="password" type="password" required placeholder="Create a password" />
+            </div>
+            <div>
+              <label for="confirm">Confirm password*</label>
+              <input id="confirm" name="confirm_password" type="password" required placeholder="Repeat password" />
+            </div>
+          </div>
+          <div class="inline" style="justify-content:space-between;flex-wrap:wrap">
+            <span class="lead" id="note">We usually reply within a few days.</span>
+            <button class="btn" type="submit">Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      Made for students, trusted worldwide 🌍 • © <span id="year"></span> Ecademictube
+    </div>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // calculator
+    function calc(){
+      const avg = Math.max(0, Number(document.getElementById('avg').value||0));
+      const rate = Math.max(0, Number(document.getElementById('rate').value||0));
+      const refs = Math.max(0, Number(document.getElementById('refs').value||0));
+      const val = (avg * (rate/100) * refs);
+      document.getElementById('out').textContent = `$${val.toFixed(0)} / month`;
+    }
+    ['avg','rate','refs'].forEach(id=>{
+      const el=document.getElementById(id); el.addEventListener('input', calc);
+    });
+    calc();
+
+    // form basic handler
+    const form = document.getElementById('form');
+    const note = document.getElementById('note');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const required = ['first','last','college','whatsapp','address','city','state','country','email','password','confirm'];
+      for (const id of required){
+        const el=document.getElementById(id);
+        if(!el || !el.value || !el.value.trim()){ if(el){el.focus();} note.textContent='Please fill all required fields.'; note.style.color='#d90429'; return; }
+      }
+      // password match
+      if(document.getElementById('password').value !== document.getElementById('confirm').value){
+        note.textContent='Passwords do not match.'; note.style.color='#d90429'; return;
+      }
+
+      const data = new FormData(form);
+      const body = Array.from(data.entries()).map(([k, v]) => `${k}: ${v}`).join('%0D%0A');
+      window.location.href = `mailto:partners@ecademictube.com?subject=Partner Application&body=${body}`;
+      note.textContent='Thanks! Opening your email app to send the application…';
+      note.style.color='#2456ff';
+    });
+  </script>
+</body>
+</html>
